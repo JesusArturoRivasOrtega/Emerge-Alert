@@ -37,6 +37,12 @@ html/
 └── viruela/viruela.html
 ```
 
+## Diseño visual
+
+La interfaz usa una estética oscura de respuesta operativa, acentos turquesa y ámbar, video ambiental y tres imágenes optimizadas en WebP. Incluye animaciones de entrada, progreso de lectura, navegación móvil accesible y soporte para `prefers-reduced-motion`.
+
+Las imágenes de `html/media/` fueron generadas específicamente para el proyecto y no contienen texto, logotipos ni contenido gráfico sensible.
+
 ## Fuentes del manual
 
 Las recomendaciones se muestran de forma resumida y enlazan a fuentes de consulta oficiales: [MedlinePlus — heridas](https://medlineplus.gov/spanish/ency/article/000043.htm), [MedlinePlus — sangrado](https://medlineplus.gov/spanish/ency/article/000045.htm), [MedlinePlus — quemaduras](https://medlineplus.gov/spanish/ency/article/000030.htm), [MedlinePlus — atragantamiento](https://medlineplus.gov/spanish/choking.html) y [CDC — mpox](https://www.cdc.gov/monkeypox/caring/index.html).

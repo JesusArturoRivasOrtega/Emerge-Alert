@@ -17,6 +17,11 @@ html/css/*
 html/js/*
 !html/js/emerge.js
 !html/js/detector.js
+!html/media/
+html/media/*
+!html/media/first-aid-kit.webp
+!html/media/disaster-response.webp
+!html/media/health-surveillance.webp
 !html/video/
 html/video/*
 !html/video/video.mp4
