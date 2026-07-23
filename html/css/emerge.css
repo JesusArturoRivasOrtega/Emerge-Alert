@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 :root {
   --ink: #10212b;
@@ -268,3 +268,100 @@ button { font: inherit; }
   .footer-grid { grid-template-columns: 1fr; gap: 1rem; }
   .footer-bottom { flex-direction: column; }
 }
+
+/* --------------------------------------------------------------------------
+   Tema Legacy: recupera el contraste, la atmósfera audiovisual y los acentos
+   del diseño original, con componentes y contenido renovados.
+   -------------------------------------------------------------------------- */
+body.legacy-theme {
+  --ink: #f6f8f9;
+  --ink-2: #c3cdd1;
+  --paper: #11191f;
+  --paper-2: #17232b;
+  --line: rgba(202, 227, 226, .14);
+  --teal: #1aa7a0;
+  --teal-dark: #8be7df;
+  --teal-soft: #163f43;
+  --orange: #f48462;
+  --yellow: #f6c95f;
+  --white: #1a262e;
+  --shadow: 0 19px 48px rgba(0, 0, 0, .34);
+  font-family: Montserrat, Manrope, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+body.legacy-theme .site-header { background: rgba(12, 19, 24, .86); }
+body.legacy-theme .site-header.scrolled { box-shadow: 0 5px 24px rgba(0, 0, 0, .32); }
+body.legacy-theme .brand { color: #fff; }
+body.legacy-theme .brand-mark { color: #0e1b20; background: var(--teal-dark); box-shadow: 5px 5px 0 rgba(26, 167, 160, .32); }
+body.legacy-theme .brand small { color: var(--teal-dark); }
+body.legacy-theme .nav-links a { color: #d5e5e4; }
+body.legacy-theme .nav-links a:not(.button)::after { background: var(--teal-dark); }
+body.legacy-theme .button--primary { color: #082125; background: var(--teal-dark); box-shadow: 0 8px 18px rgba(139, 231, 223, .15); }
+body.legacy-theme .button--primary:hover { color: #fff; background: var(--teal); }
+body.legacy-theme .button--dark { background: #f2f8f8; color: #102127; }
+body.legacy-theme .button--light { color: #eef9f7; background: rgba(21, 36, 44, .85); border-color: rgba(188, 232, 226, .3); }
+body.legacy-theme .button--light:hover { color: #0d2427; background: var(--teal-dark); border-color: var(--teal-dark); }
+body.legacy-theme .button--danger { background: #c95e45; }
+body.legacy-theme .alert-strip { color: #13252a; background: var(--yellow); }
+body.legacy-theme .eyebrow { color: var(--teal-dark); }
+body.legacy-theme .eyebrow::before { background: var(--yellow); box-shadow: 0 0 0 5px rgba(246, 201, 95, .13); }
+body.legacy-theme .hero { min-height: 630px; padding: clamp(5.5rem, 10vw, 8.4rem) 0 6.5rem; background: #101a20; }
+body.legacy-theme .hero::before { top: -14rem; right: -14rem; border-color: rgba(177, 233, 226, .17); box-shadow: 0 0 0 55px rgba(9, 19, 25, .12), 0 0 0 110px rgba(9, 19, 25, .1); }
+body.legacy-theme .hero::after { background: var(--teal); opacity: .21; filter: blur(14px); }
+.legacy-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .58; }
+.legacy-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5, 14, 18, .88) 0%, rgba(8, 21, 26, .69) 52%, rgba(8, 18, 23, .9) 100%); }
+body.legacy-theme .hero-grid { grid-template-columns: minmax(0, 1.55fr) minmax(280px, .7fr); }
+body.legacy-theme .hero-copy { padding: 1.7rem 0 1.7rem clamp(0rem, 2vw, 1.3rem); }
+body.legacy-theme .hero-lead, body.legacy-theme .hero-note { color: #d0dfdf; }
+body.legacy-theme .hero-note::before { color: #09272a; background: var(--teal-dark); }
+body.legacy-theme .pulse-card { border: 1px solid rgba(196, 238, 233, .19); background: rgba(10, 23, 30, .92); backdrop-filter: blur(10px); }
+body.legacy-theme .pulse-card, body.legacy-theme .pulse-card .pulse-number { color: #fff; }
+body.legacy-theme .pulse-card__bottom { background: rgba(86, 199, 190, .13); }
+body.legacy-theme .floating-chip { color: #e9f4f2; background: #15252d; border: 1px solid rgba(189, 232, 228, .18); }
+body.legacy-theme .chip-icon { color: var(--yellow); background: rgba(246, 201, 95, .13); }
+body.legacy-theme .quick-grid { margin-top: -2.3rem; }
+body.legacy-theme .quick-card, body.legacy-theme .path-card, body.legacy-theme .incident-card, body.legacy-theme .manual-card { background: #17242c; border-color: var(--line); box-shadow: 0 11px 26px rgba(0, 0, 0, .2); }
+body.legacy-theme .quick-card:hover, body.legacy-theme .path-card:hover { border-color: rgba(139, 231, 223, .6); box-shadow: 0 16px 35px rgba(0, 0, 0, .35); }
+body.legacy-theme .quick-card p, body.legacy-theme .path-card p, body.legacy-theme .incident-card p, body.legacy-theme .manual-card p, body.legacy-theme .step p, body.legacy-theme .manual-chapter > p { color: #b4c7c9; }
+body.legacy-theme .card-icon { color: var(--teal-dark); background: #173c40; }
+body.legacy-theme .quick-card:nth-child(2) .card-icon { color: #ffad95; background: rgba(201, 94, 69, .17); }
+body.legacy-theme .quick-card:nth-child(3) .card-icon { color: #ffd775; background: rgba(246, 201, 95, .15); }
+body.legacy-theme .quick-card:nth-child(4) .card-icon { color: #b5caff; background: rgba(91, 123, 201, .2); }
+body.legacy-theme .card-link { color: var(--teal-dark); }
+body.legacy-theme .section--tint, body.legacy-theme .page-hero { background: linear-gradient(135deg, #14212a, #10191f); }
+body.legacy-theme .steps { background: #17242c; border-color: var(--line); }
+body.legacy-theme .step + .step { border-color: var(--line); }
+body.legacy-theme .step-number { color: #0b2b2c; background: var(--teal-dark); }
+body.legacy-theme .emergency-box { background: linear-gradient(122deg, #10242b, #0a1318); border: 1px solid rgba(166, 229, 222, .16); }
+body.legacy-theme .emergency-box p { color: #bcd5d2; }
+body.legacy-theme .emergency-number a { color: var(--teal-dark); text-shadow: 0 0 25px rgba(139, 231, 223, .15); }
+body.legacy-theme .emergency-number a:hover { color: #fff; }
+body.legacy-theme .breadcrumbs { color: #a5babb; }
+body.legacy-theme .notice { color: #f2d887; background: rgba(120, 91, 14, .24); border-color: rgba(246, 201, 95, .28); }
+body.legacy-theme .notice--teal { color: #b8f1ea; background: rgba(21, 113, 107, .2); border-color: rgba(139, 231, 223, .25); }
+body.legacy-theme .manual-nav { background: #17242c; border-color: var(--line); }
+body.legacy-theme .manual-nav a { color: #b4c8c8; }
+body.legacy-theme .manual-nav a:hover, body.legacy-theme .manual-nav a.active { color: var(--teal-dark); background: #20353c; }
+body.legacy-theme .manual-chapter { border-color: var(--line); }
+body.legacy-theme .action-list li { color: #c8d8d8; border-color: var(--line); }
+body.legacy-theme .action-list strong { color: #fff; }
+body.legacy-theme .action-list li::before { color: #0a282a; background: var(--teal-dark); }
+body.legacy-theme .do-card { color: #c4ebe5; background: #143c3d; }
+body.legacy-theme .dont-card { color: #f8c5b5; background: #46261f; }
+body.legacy-theme .do-card h3 { color: #8be7df; }
+body.legacy-theme .dont-card h3 { color: #ffad95; }
+body.legacy-theme .resource-list a { color: var(--teal-dark); background: #17242c; border-color: var(--line); }
+body.legacy-theme .resource-list a:hover { color: #fff; border-color: var(--teal-dark); }
+body.legacy-theme .detector-page { background: #111b22; }
+body.legacy-theme.detector-page { background: radial-gradient(circle at 20% 5%, #173b3f, #101a21 42%, #0b1217); }
+body.legacy-theme .detector-intro p { color: #c0d0d1; }
+body.legacy-theme .detector-layout { border-color: rgba(177, 230, 224, .16); background: #17242c; }
+body.legacy-theme .camera-panel { background: #09151b; }
+body.legacy-theme .result-message { color: #c6d7d7; background: #132128; border-color: var(--line); }
+body.legacy-theme .result-message strong { color: #fff; }
+body.legacy-theme .prediction { background: #20353b; }
+body.legacy-theme .prediction__label, body.legacy-theme .prediction__confidence { color: #a2c4c3; }
+body.legacy-theme .site-footer { background: #070f14; }
+body.legacy-theme .path-card--teal p { color: #e0fbf8; }
+@media (max-width: 900px) { body.legacy-theme .hero-grid { grid-template-columns: 1fr; } }

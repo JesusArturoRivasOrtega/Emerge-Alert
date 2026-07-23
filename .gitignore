@@ -17,6 +17,9 @@ html/css/*
 html/js/*
 !html/js/emerge.js
 !html/js/detector.js
+!html/video/
+html/video/*
+!html/video/video.mp4
 !html/heridas/
 html/heridas/*
 !html/heridas/heridas.html
